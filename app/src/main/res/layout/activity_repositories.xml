@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_500"
+    android:orientation="vertical"
+    tools:context=".RepositoriesActivity">
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:layout_gravity="center"
+        style="@style/TextAppearance"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRepos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:background="@color/gray_300"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>
